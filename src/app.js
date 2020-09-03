@@ -17,13 +17,13 @@ app.get('/',(req, res)=>{
     res.render('index',{title: 'Account Summary', accounts: accounts});
 });
 
-app.use('/account', accountRoutes);
+// app.use('/account', accountRoutes);
 
 app.get('/profile',(req, res)=>{
     res.render('profile',{user: users[0]});
 });
 
-app.use('/services', servicesRoutes);
+// app.use('/services', servicesRoutes);
 
 app.listen(3000,()=>{
     console.log('PS Project Running on port 3000!');
